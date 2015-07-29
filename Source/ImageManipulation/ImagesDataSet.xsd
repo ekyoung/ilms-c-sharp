@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImagesDataSet" targetNamespace="http://schemas.ethanyoung.us/ImageManipulation/ImagesDataSet.xsd" xmlns:mstns="http://schemas.ethanyoung.us/ImageManipulation/ImagesDataSet.xsd" xmlns="http://schemas.ethanyoung.us/ImageManipulation/ImagesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImagesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ImagesDataSet" msprop:Generator_DataSetName="ImagesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Images" msprop:Generator_UserTableName="Images" msprop:Generator_RowDeletedName="ImagesRowDeleted" msprop:Generator_RowChangedName="ImagesRowChanged" msprop:Generator_RowClassName="ImagesRow" msprop:Generator_RowChangingName="ImagesRowChanging" msprop:Generator_RowEvArgName="ImagesRowChangeEvent" msprop:Generator_RowEvHandlerName="ImagesRowChangeEventHandler" msprop:Generator_TableClassName="ImagesDataTable" msprop:Generator_TableVarName="tableImages" msprop:Generator_RowDeletingName="ImagesRowDeleting" msprop:Generator_TablePropName="Images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ImageId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ImageId" msprop:Generator_ColumnPropNameInRow="ImageId" msprop:Generator_ColumnVarNameInTable="columnImageId" msprop:Generator_ColumnPropNameInTable="ImageIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" msprop:Generator_UserColumnName="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" />
+              <xs:element name="DateTaken" msprop:Generator_UserColumnName="DateTaken" msprop:Generator_ColumnVarNameInTable="columnDateTaken" msprop:Generator_ColumnPropNameInRow="DateTaken" msprop:Generator_ColumnPropNameInTable="DateTakenColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HasThumbnail" msprop:Generator_UserColumnName="HasThumbnail" msprop:Generator_ColumnVarNameInTable="columnHasThumbnail" msprop:Generator_ColumnPropNameInRow="HasThumbnail" msprop:Generator_ColumnPropNameInTable="HasThumbnailColumn" type="xs:boolean" />
+              <xs:element name="HasFullSize" msprop:Generator_UserColumnName="HasFullSize" msprop:Generator_ColumnVarNameInTable="columnHasFullSize" msprop:Generator_ColumnPropNameInRow="HasFullSize" msprop:Generator_ColumnPropNameInTable="HasFullSizeColumn" type="xs:boolean" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
